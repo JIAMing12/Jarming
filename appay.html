@@ -1,73 +1,11 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<style>
-@charset "utf-8";
-/* CSS Document */
-*{margin:0;padding:0;list-style-type:none;}
-a,img{border:0;}
-/*鎸夐挳鏍峰紡*/
-#ClickMe {
-	width: 200px;
-	height: 30px;
-	border: 1px solid #C40000;
-	background-color: #000;
-	color: #FFF;
-	margin:0 auto;
-}
-#goodcover {
-	display: none;
-	position: absolute;
-	top: 0%;
-	left: 0%;
-	width: 100%;
-	height: 133%;
-	background-color: black;
-	z-index: 1001;
-	-moz-opacity: 0.8;
-	opacity: 0.50;
-	filter: alpha(opacity=80);
-}
-#code {
-	width: 300px;
-	height: 500px;
-	background-color: #fff;
-	padding: 10px;
-	position: absolute;
-	display: none;
-	left: 45%;
-	z-index: 1002;
-}
-.close1 {
-	width: 300px;
-	height: 60px;
-}
-#closebt {
-	float: right;
-}
-#closebt img {
-	width: 20px;
-}
-.goodtxt {
-	text-align: center;
-}
-.goodtxt p {
-	height: 30px;
-	line-height: 30px;
-	font-size: 16px;
-	color: #000;
-	font-weight: 600;
-}
-.code-img {
-	width: 250px;
-	margin: 30px auto 0 auto;
-	padding: 10px;
-}
-.code-img img {
-	width: 240px;
-}
-</style>
-<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+
+<link rel="stylesheet" href="http://yanshi.sucaihuo.com/jquery/33/3307/demo/css/main.css" />
+<script type="text/javascript" src="http://yanshi.sucaihuo.com/jquery/33/3307/demo/js/jquery-1.8.2.min.js"></script>
+
 <title>自动领取支付宝红包</title>
 </head>
 
@@ -75,7 +13,7 @@ a,img{border:0;}
 <br><br><br><br><br><br><br>
 <center>
 <div>
-	<button type="button" id="ClickMe"><a href="https://qr.alipay.com/c1x02738zexrcvrapavnt0a">点击我领支付宝红包</a></button>
+	<button type="button" id="ClickMe">点击我领支付宝红包</button>
 </div>
 </center>
 <div id="goodcover"></div>
@@ -90,7 +28,6 @@ a,img{border:0;}
   <div class="code-img"><a href="https://qr.alipay.com/c1x02738zexrcvrapavnt0a"><img id="ewmsrc"  src="http://yanshi.sucaihuo.com/jquery/33/3307/demo/images/code.jpg"></a></div>
 </div>
 <!--以上所有代码请勿修改，否则无法领取红包！仅限手机访问该页面-->
-
 <script>
 $(function() {
     //alert($(window).height());
